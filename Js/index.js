@@ -4,7 +4,7 @@ document.getElementById('discordForm').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const message = document.getElementById('message').value;
 
-    const webhookURL ='https://discord.com/api/webhooks/1157200915766456351/YDfWKVva9WcxLIUSROnoirbyRoFfdqwhWztwNH1yDVDGKXUodv0ywO0sYW5L2jbVPtE5'; 
+    const webhookURL ='https://discord.com/api/webhooks/1157258379698376758/GgWRg_aN1PRPvo67fN0xZ_dS0AtRL4QAPkqZs8mQO7gn8hEOVM-PuFTDQkmR-MdttspB'; 
 
     const data = {
         content: message,
@@ -21,6 +21,7 @@ document.getElementById('discordForm').addEventListener('submit', function (e) {
     .then(response => {
         if (response.ok) {
             alert('Message sent to Discord successfully!');
+            document.getElementById('discordForm').reset(); // Reset the form
         } else {
             alert('Error sending message to Discord.');
         }
