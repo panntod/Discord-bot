@@ -17,7 +17,7 @@ if (empty($nama) || empty($email) || empty($message)) {
     $discordMessage .= "Message:\n$message";
 
     // Discord webhook URL
-    $webhookUrl = 'https://discord.com/api/webhooks/1141671547107541073/d6eogkv7uATeQRBO5OgkA-N8sby0U54uNCBPANAfn0P_B7I1xOrdGZHtfLV2F7FRJySe';
+    $webhookUrl = 'https://discord.com/api/webhooks/1157282064173903964/569PMAgPg6E9GM_nPQn5tbQCYEr1e7LuVUGL_XnFzhJ_V0XcUvChNEYdAQyPVlrF9ddY';
 
     // Create an array with the message content
     $data = [
